@@ -20,7 +20,7 @@ const About = () => {
                     <p>Nice to meet you! Thank you for taking a look at my portfolio.</p>
                 </div>
                 <div>
-                    <p>I am a computer science graduate of Oregon State University interested in software development.</p>
+                    <p>I am a computer science graduate of Oregon State University specialized in building software applications in Python and JavaScript.</p>
                 </div>
             </div>
         </div>
