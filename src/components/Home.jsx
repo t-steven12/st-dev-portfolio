@@ -13,9 +13,9 @@ const Home = () => {
         <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Steven Tieu</h1>
         <h2 className='text-4xl sm-text-7xl font-bold text-[#8892b0] pb-2'>I am a Software Developer.</h2>
         <div>
-          <Link to="work" spy={true} smooth={true} duration={500}>
+          <Link to="projects" spy={true} smooth={true} duration={500}>
             <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#FF8000] hover:border-[#FF8000]'>
-              View Work
+              View Projects
               <BsChevronRight className='ml-3 group-hover:rotate-90 duration-300'/>
             </button>
           </Link>
