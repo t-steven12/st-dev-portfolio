@@ -20,7 +20,7 @@ const About = () => {
                     <p>Nice to meet you! Thank you for taking a look at my portfolio.</p>
                 </div>
                 <div>
-                    <p>I am a computer science graduate of Oregon State University specialized in building software applications in Python and JavaScript.</p>
+                    <p className='text-xl'>I am a computer science graduate of Oregon State University and a psychology graduate of San Diego State University that specializes in building applications in Python and JavaScript. Using both my knowledge in computer science and psychology, I strive to create intuitive and user-friendly software. </p>
                 </div>
             </div>
         </div>

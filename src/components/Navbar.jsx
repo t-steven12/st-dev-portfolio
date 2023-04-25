@@ -1,7 +1,7 @@
 /* The following code is derived from the following YouTube tutorial by Clint Briley of the channel "Code Commerce": https://www.youtube.com/watch?v=2kg0z1qNrkw&t=664s */
 
-import React, {useState} from 'react'
-import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
+import React, {useState, useRef} from 'react'
+import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assets/Steven_Tieu_mclaren_logo_1_trans.png'
@@ -9,11 +9,50 @@ import { Link } from 'react-scroll'
 
 const Navbar = () => {
 
+    const firstBar = useRef(null)
+    const secondBar = useRef(null)
+    const thirdBar = useRef(null)
+
     const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
+
+    // handleClick based on code seen here: https://codepen.io/MikuLukaL0v3r/details/wvYJBXr
+    /* 
+    Copyright (c) 2023 by Steve (https://codepen.io/MikuLukaL0v3r/pen/wvYJBXr)
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    */
+    const handleClick = () => {
+        if (!nav === true) {
+            firstBar.current.style.animation = "firstBarToX 0.1s linear forwards";
+            secondBar.current.style.animation = "secondBarToX 0.1s linear forwards";
+            thirdBar.current.style.animation = "thirdBarToX 0.1s linear forwards";
+        } else {
+            firstBar.current.style.animation = "firstXToBar 0.1s linear forwards";
+            secondBar.current.style.animation = "secondXToBar 0.1s linear forwards";
+            thirdBar.current.style.animation = "thirdXToBar 0.1s linear forwards";
+        }
+        setNav(!nav)
+    }
+
+    // Code for changing background of navbar derived from code shown in the following YouTube tutorial by Brian Design: https://www.youtube.com/watch?v=JMsNslI8KoY 
+    const [navBgBlack, setNavBg] = useState(false)
+    const changeNavBg = () => {
+        if (window.scrollY >= 150) {
+            setNavBg(true);
+        }
+        else {
+            setNavBg(false);
+        }
+    }
+
+    window.addEventListener("scroll", changeNavBg)
 
   return (
-    <div className='fixed w-full h-[150px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className={navBgBlack ? 'fixed w-full h-[150px] flex justify-between items-center px-4 bg-[#0a192f] border-b-2 border-b-[#ff8000] text-gray-300 border-trans' : 'fixed w-full h-[150px] flex justify-between items-center px-4 bg-[#0a192f] border-b-2 border-b-[#0a192f] text-gray-300 border-trans'}>
         <div className='absolute top-[-20px] left-[-20px]'>
             <img src={Logo} alt='ST Logo' style={{ width: '200px' }} />
         </div>
@@ -37,9 +76,21 @@ const Navbar = () => {
             </li>
         </ul>
 
-        {/* Hamburger */}
-        <div onClick={handleClick} className='md:hidden absolute p-7 top-[35px] right-0 z-10 hover:cursor-pointer'>
-            {!nav ? <FaBars size={30} /> : <FaTimes size={30}/>}
+        {/* Hamburger Menu */ /* Based on code seen here: https://codepen.io/MikuLukaL0v3r/details/wvYJBXr 
+    
+        Copyright (c) 2023 by Steve (https://codepen.io/MikuLukaL0v3r/pen/wvYJBXr)
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+        */}
+        <div onClick={handleClick} className='md:hidden absolute top-[45px] right-[30px] z-10 hover:cursor-pointer'>
+            <div className='bars' ref={firstBar}></div>
+            <div className='bars' ref={secondBar}></div>
+            <div className='bars' ref={thirdBar}></div>
         </div>
 
         {/* Mobile menu */}
