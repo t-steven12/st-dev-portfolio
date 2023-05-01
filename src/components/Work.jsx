@@ -68,7 +68,7 @@ const Work = () => {
                             Animes Database CRUD Project
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="https://drive.google.com/file/d/1Mb5cBSiSA1uwCB6dA_-6AVS-BzfSsoHg/view?usp=sharing">
+                            <a href="https://drive.google.com/file/d/1yxqWsMwXWLVwMUfkWcOSJU5e60oJBpuB/view?usp=sharing">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Summary</button>
                             </a>
                             <a href="https://github.com/t-steven12/AnimeFansUnite-public-repo">
