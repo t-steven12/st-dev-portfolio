@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/st-dev-portfolio/static/css/main.6c2fcefc.css",
-    "main.js": "/st-dev-portfolio/static/js/main.ed0aef17.js",
+    "main.js": "/st-dev-portfolio/static/js/main.4556bbcf.js",
     "static/media/AnimeFansUnite.png": "/st-dev-portfolio/static/media/AnimeFansUnite.cf4f8a66dea0397d88ae.png",
     "static/media/AnimalMatch.png": "/st-dev-portfolio/static/media/AnimalMatch.2d4f913a7f95997cc8fc.png",
     "static/media/boats-and-loads-portfolio-project.JPG": "/st-dev-portfolio/static/media/boats-and-loads-portfolio-project.45ed7bc3bfcdf512eb42.JPG",
     "static/media/Flask logo.png": "/st-dev-portfolio/static/media/Flask logo.6973564f0a43f57163a3.png",
     "static/media/chatroom-project.png": "/st-dev-portfolio/static/media/chatroom-project.43264a222729887cb3ba.png",
     "static/media/python-logo-trans.png": "/st-dev-portfolio/static/media/python-logo-trans.2ca5f46e4e016af7a913.png",
+    "static/media/CI-2.png": "/st-dev-portfolio/static/media/CI-2.53a02f57b3016e5166e4.png",
     "static/media/react.png": "/st-dev-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/st-dev-portfolio/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/Steven_Tieu_mclaren_logo_1_trans.png": "/st-dev-portfolio/static/media/Steven_Tieu_mclaren_logo_1_trans.40cd79f4f08a1e008c75.png",
@@ -15,10 +16,10 @@
     "static/media/javascript.png": "/st-dev-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/st-dev-portfolio/index.html",
     "main.6c2fcefc.css.map": "/st-dev-portfolio/static/css/main.6c2fcefc.css.map",
-    "main.ed0aef17.js.map": "/st-dev-portfolio/static/js/main.ed0aef17.js.map"
+    "main.4556bbcf.js.map": "/st-dev-portfolio/static/js/main.4556bbcf.js.map"
   },
   "entrypoints": [
     "static/css/main.6c2fcefc.css",
-    "static/js/main.ed0aef17.js"
+    "static/js/main.4556bbcf.js"
   ]
 }
