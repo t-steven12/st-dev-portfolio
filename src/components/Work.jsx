@@ -7,6 +7,7 @@ import TwoDPuzzle from '../assets/projects/2d-puzzle-img.png'
 import ChatRoom from '../assets/projects/chatroom-project.png'
 import AnimeFansUnite from '../assets/projects/AnimeFansUnite.png'
 import BoatsAndLoad from '../assets/projects/boats-and-loads-portfolio-project.JPG'
+import ContinuousIntegration from '../assets/projects/CI-2.png'
 
 const Work = () => {
   return (
@@ -93,6 +94,20 @@ const Work = () => {
                             </a>
                             <a href="https://drive.google.com/file/d/10Nk4mXQq1iTY5ZrgQPo7Ej5-JlH2t8fl/view?usp=sharing">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>API Spec</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style={{backgroundImage: `url(${ContinuousIntegration})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                    {/* Hover effects */}
+                    <div className='invisible text-center group-hover:visible'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            Continuous Integration Project Report
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="https://drive.google.com/file/d/1fNBEllwbMDC-uFUdXQpIVu58wrug9EZZ/view?usp=sharing">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Report</button>
                             </a>
                         </div>
                     </div>
