@@ -8,6 +8,7 @@ import ChatRoom from '../assets/projects/chatroom-project.png'
 import AnimeFansUnite from '../assets/projects/AnimeFansUnite.png'
 import BoatsAndLoad from '../assets/projects/boats-and-loads-portfolio-project.JPG'
 import ContinuousIntegration from '../assets/projects/CI-2.png'
+import LiftMasterPhoto from '../assets/projects/LiftMasterPortfolioPhoto.jpg'
 
 const Work = () => {
   return (
@@ -19,6 +20,20 @@ const Work = () => {
 
             {/* Project item container*/}
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+              <div style={{backgroundImage: `url(${LiftMasterPhoto})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                    {/* Hover effects */}
+                    <div className='invisible text-center group-hover:visible'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            Weightlifting Exercise Tracker Mobile App
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="https://github.com/t-steven12/LiftMaster-Project">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code/Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div style={{backgroundImage: `url(${TwoDPuzzle})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                     {/* Hover effects */}
