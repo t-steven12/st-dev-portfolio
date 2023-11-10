@@ -127,7 +127,7 @@ const Navbar = () => {
                     <a className='flex justify-between items-center w-full text-gray-300' href='mailto: tieu.steven11@gmail.com'>Email <HiOutlineMail size={30} /></a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#FF8000]'>
-                    <a className='flex justify-between items-center w-full text-gray-300' href='https://drive.google.com/file/d/1OJuW7oxVw71LMjb3v6sN-JD5zVtbc7Cw/view?usp=sharing'>Resume <BsFillPersonLinesFill size={30} /></a>
+                    <a className='flex justify-between items-center w-full text-gray-300' href='https://drive.google.com/file/d/10pCRcxPyW5TBieR991psCIZiXk9I0nwa/view?usp=sharing'>Resume <BsFillPersonLinesFill size={30} /></a>
                 </li>
             </ul>
         </div>
